@@ -6,14 +6,17 @@ import (
 
 var pl = fmt.Println
 
-func getSum2(nums ...int) int {
+func getArraySum(arr []int) int {
 	sum := 0
-	for _, num := range nums {
-		sum += num
+	for _, val := range arr {
+		sum += val
 	}
 	return sum
 }
 
 func main() {
-	pl(getSum2(1,2,3,4,44,3,2,25,2))
+	vArr := []int{1,2,3,4}
+	pl("Array Sum :", getArraySum(vArr))
+
+	
 }
