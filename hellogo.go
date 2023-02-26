@@ -2,14 +2,29 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
-	"time"
 )
 
 var pl = fmt.Println
 func main() {
-	seedSecs := time.Now().Unix()
-	rand.Seed(seedSecs)
-	randNum := rand.Intn(50) + 1
-	pl("Random :", randNum)
+	// %d : Integer
+	// %c : Character
+	// %f : Float
+	// %t : Boolean
+	// %s : String
+	// %o : Base 8
+	// %x : Base 16
+	// %v : Guesses based on data type
+	// %T : Type of supplied value
+
+	fmt.Printf("%s %d %c %f %t %o %x\n",
+		"Stuff", 1, 'A', 3.14, true, 1, 1)
+
+	fmt.Printf("%9f\n", 3.14)
+	fmt.Printf("%9.2f\n", 3.141592)
+	fmt.Printf("%9.f\n", 3.141592)
+	fmt.Printf("\n")
+
+	sp1 := fmt.Sprintf("%9.f\n", 3.141592)
+	fmt.Printf("%9s\n", "---")
+	fmt.Println(sp1)
 }
