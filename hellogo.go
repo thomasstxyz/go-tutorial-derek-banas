@@ -1,18 +1,18 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
-	"log"
-	"os"
+	"reflect"
 )
 
 var pl = fmt.Println
 func main() {
-	// var name type
-	var vName string = "Thomas"
-	var v1, v2 = 1.2, 3.4
-	var v3 = "hello"
-	v4 := 2.4
-	v4 = 5.4
+	//            int, float64,  bool, string, rune
+	// Default      0,     0.0, false,     "",   ""
+
+	pl(reflect.TypeOf(15))
+	pl(reflect.TypeOf(13.3))
+	pl(reflect.TypeOf(true))
+	pl(reflect.TypeOf("hello"))
+	pl(reflect.TypeOf('🦧'))
 }
