@@ -9,12 +9,10 @@ import (
 
 var pl = fmt.Println
 func main() {
-	pl("What is your name?")
-	reader := bufio.NewReader(os.Stdin)
-	name, err := reader.ReadString('\n')
-	if err == nil {
-		pl("Hello", name)
-	} else {
-		log.Fatal(err)
-	}
+	// var name type
+	var vName string = "Thomas"
+	var v1, v2 = 1.2, 3.4
+	var v3 = "hello"
+	v4 := 2.4
+	v4 = 5.4
 }
